@@ -7,8 +7,11 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Buttons -->
-    <%= link_to "New Flat", new_flat_path, class: "btn btn-primary" %>
-
+    <form action="/flats" class="form-in-line" method="get">
+      <input type="text" name="query">
+      <input type="submit" value="Search" class="btn btn-primary">
+    </form>
+    <%= link_to "New Flat", new_flat_path, class: "btn btn-danger" %>
   </div>
 </div>
 

@@ -1,4 +1,7 @@
 <div class="row">
+  <% if @query %>
+  <h2>You searched for <%= @query %> and <%= @flats.count %> flats where found</h2>
+  <% end %>
   <% @flats.each do |flat| %>
   <div class="col-xs-12 col-sm-4">
     <div class="flat-card">
